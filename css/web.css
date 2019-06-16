@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+#intro {
+	background-color: none;
+	opacity: 40%;
+	border: bold;
+	font: bebas;
+	font-size: 16px;
+  color: black;
+}
+
+#icon-bar {
+  max-width: 100%
+}
+
+.navv {
+  height: 650px;
+  background: url(../assets/images/beyonce1.jpg);
+  -webkit-filter: grayscale(20%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(20%);
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.carousel .slide {
+  height: 100%;
+}
+.carousel-inner {
+  height: 100%;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 300px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.fa {
+  padding: 10px;
+  font-size: 35px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: left;
+  max-width: 100%;
+  margin-bottom: 8%;
+  border-radius: 999px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+#ava_Do {
+  float: left;
+  max-width: 100%;
+  margin-bottom: 8%;
+  border-radius: 999px;
+
+}
+.contact {
+  list-style: none;
+  float: right;
+}
+#Get_My_CV {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20%;
+  display: block;
+}
+
+/* WRITING */
+.title-writing {
+  font-family: Lato;
+  line-height: 1.5;
+}
+.publishing-date {
+  color: #828282;
+  font-size: 16px;
+  font-family: Nunito;
+}
+
+
+  /* TAB CONTENT */
+.content {
+  text-align: justify;
+  margin-top: 16px;
+  font-family: Open Sans;
+  font-size: 18px;
+  line-height: 1.5;
+ 
+}
+.btn .btn-default:focus,
+.btn .btn-default:active {
+  padding-left: 20px;
+  background-color: gray;
+}
+.btn .btn-default:hover {
+  opacity: 80%;
+}
+
+
+/** TIPS:
+The carosuel full screen 
+1. The carousel shouldn't be in any other div, like for example div with class container. 
+2. You can align image position in classes bg1, bg2, bg3 using css background-position.
+*/
+
+/* Carousel 100% Fullscreen */
+html, body {
+height:100%;
+margin:0;
+padding:0;
+}
+.carousel, .item, .active {
+height:100%;
+}
+.carousel-inner {
+height:100%;
+}
+.carousel {
+margin-bottom: 60px;
+}
+.carousel-caption {
+z-index: 10;
+}
+.carousel .item {
+background-color: #777;
+}
+.carousel .carousel-inner .bg {
+background-repeat:no-repeat;
+background-size:cover;
+}
+.carousel .carousel-inner .bg1 {
+background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/spiderweb.jpg');
+background-position: center top;
+}
+.carousel .carousel-inner .bg2 {
+background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/hearthand.jpg');
+background-position: center center;
+}
+.carousel .carousel-inner .bg3 {
+background-image:url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/158072/woman-camera.jpg');
+background-position: center bottom;
+}
+
+/* */
+
+/* Photo button*/
+button {
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    padding: 0;
+    border-radius: 50%;
+    border: 2px solid #4CAF50;
+    position: absolute;
+    top: 3%;
+    left: 60%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.4), 0 6px 20px 0 rgba(0,0,0,0.39);
+}
+
+
+#close-image img {
+    display: block;
+    height: 100px;  
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Button navbar*/
+
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+/*   */
+
+
+
+/* text in caroseul*/
+.text {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    color: white;
+    z-index: 1000;
+    width: 360px;
+}
+
+h2 {
+    font-size: 60px;
+}
+hr {
+    border: 1px solid white;
+    width: 60px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+p {
+    font-weight: lighter;
+    margin: 30px 50px 0px 0px;
+    font-size: 12px;
+}
+
+button {
+  border: 2px solid white;
+  background-color: #0000ff00;
+  padding: 5px 20px;
+  color: white;
+  display: inline-block;
+  margin-top: 20px;
+  border-radius: 6px;
+}
+
+/*  */
+
+
+
+
+
+/* IM DO*/
+
+#head-background {
+  height: 35%;
+  position: relative;
+  background-image: url(../assets/images/image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  }
+#head-image {
+    border-radius: 50%;
+    left: 0%;
+    max-width: 250px;
+    position: absolute;
+    top: 10%;
+  }
+/**
+@media all and (min-width: 320px) {
+  #head-background {
+    height: 15%;
+    position: relative;
+    background-image: url(../assets/images/image.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 0;
+  }
+  #head-image {
+    border-radius: 50%;
+    left: 20%;
+    max-width: 250px;
+    position: absolute;
+    top: 110%;
+    transform: translateY(-75%);
+    z-index: 1;
+  }
+}
+
+@media all and (min-width: 768px) {
+  #head-background {
+  height: 35%;
+  position: relative;
+  background-image: url(../assets/images/image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+  }
+
+  #head-image {
+    border-radius: 50%;
+    left: 15%;
+    max-width: 250px;
+    position: absolute;
+    top: 135%;
+    transform: translateY(-75%);
+    z-index: 1;
+  }
+}
+**/
+
+
+/* IMDO CAROSUEL*/

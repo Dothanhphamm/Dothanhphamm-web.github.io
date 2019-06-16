@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'Nunito', sans-serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* CAROSUEL */
+html, body {
+height:100%;
+margin:0;
+padding:0;
+}
+
+.carousel, .item {
+height:100%;
+}
+.carousel, .item, .active {
+height:100%;
+}
+.carousel-inner {
+height:100%;
+}
+.carousel {
+margin-bottom: 60px;
+}
+.carousel-caption {
+z-index: 10;
+}
+.carousel .item {
+background-color: #777;
+}
+.carousel .carousel-inner .bg {
+background-repeat:no-repeat;
+background-size:cover;
+}
+.carousel .carousel-inner .bg1 {
+background-image:url(../assets/images/home3.1.jpg);
+background-position: center top;
+}
+.carousel .carousel-inner .bg2 {
+background-image:url(../assets/images/imdo.jpg);
+background-position: center center;
+}
+.carousel .carousel-inner .bg3 {
+background-image:url(../assets/images/img.jpg);
+background-position: center bottom;
+}
+.carousel .carousel-inner .bg4 {
+background-image:url(../assets/images/img2.jpg);
+background-position: center bottom;
+}
+.carousel .carousel-inner .bg5 {
+background-image:url(../assets/images/background-img5.jpg);
+background-position: center bottom;
+}
+
+/* */
+.carousel, .item .imdo, .active {
+height: 40%;
+}
+.carousel-inner .imdo {
+height: 100%;
+}
+/*  */
+
+.container {
+  position: relative;
+}
+@media screen and (min-width: 300px) {
+  #ava_image {
+    max-width: 50%;
+    border-radius: 50%;
+    display: block;
+  }
+}
+
+@media screen and (min-width: 428px) {
+  #ava_image {
+    width: 100%;
+    border-radius: 50%;
+    display: block;
+  }
+}
+.overlay-ava {
+  position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1%;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #8CEEEE;
+  border-radius: 50%;
+}
+
+.container:hover .overlay-ava {
+  opacity: 0.4;
+}
+
+.text-ava {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.button-head-background {
+  border: 2px solid white;
+    background-color: #0000ff00;
+    padding: 5px 20px;
+    color: white;
+    display: block;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+}
+.button-head-background:focus,
+.button-head-background:active {
+  background-color: none;
+}
+.button-head-background:hover {
+  opacity: 80%;
+}
+
+/* END OF CAROSUEL */
+
+/* IMDO BIO */
+#bio1 {
+  text-align: center;
+  font-family: Lato;
+}
+#bio {
+  text-align: center;
+  padding-top: 1%;
+  display: block;
+  font-family: Nunito;
+}
+.introduction {
+  text-align: justify;
+  text-indent: 20px;
+  display: block;
+  font-size: 16px;
+  font-family: Open Sans;
+  line-height: 1.5;
+}
+
+.get-my-cv {
+  color: #494949;
+  text-transform: uppercase;
+  background: #ffffff;
+  padding: 5px 20px;
+  border: 1px solid #494949;
+  border-radius: 6px;
+  display: inline-block;
+  font-family: Lato;
+  margin-top: 10%;
+}
+
+.get-my-cv:hover {
+  color: #ffffff;
+  background: #f6b93b;
+  border-color: #FFF587;
+  transition: all 0.4s ease 0s;
+  text-decoration-style: none;
+  text-underline-position: none;
+}
+/* END OF IMDO BIO */

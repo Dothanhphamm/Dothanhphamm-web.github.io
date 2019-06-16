@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    font-family: 'Nunito', sans-serif;
+}
+/*RESET CSS*/
+html,body,.wraper,.slide,ul,li,.motslide {
+    width: 100%;
+    height: 100%;
+}
+div.silde ul{
+    position: relative;
+}
+div.slide ul li.b{
+    position: absolute;
+    top:0px;
+}
+div.slide ul li.c{
+    position: absolute;
+    top:0px;
+}
+div.slide ul li.d{
+    position: absolute;
+    top:0px;
+}
+div.slide ul li.e{
+    position: absolute;
+    top:0px;
+}
+div.motslide{
+   position: absolute;
+top:0;
+}
+.motslide{
+    position: relative;
+    overflow: hidden;
+}
+
+
+.text {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    color: white;
+    z-index: 1000;
+    width: 360px;
+}
+
+h2 {
+    font-size: 46px;
+}
+hr {
+    border: 1px solid white;
+    width: 60px;
+    margin-top: 20px;
+}
+
+h4 {
+    font-size: 26px;
+}
+
+p {
+    font-weight: lighter;
+    margin: 30px 50px 0px 0px;
+    font-size: 16px;
+}
+
+button {
+    border: 2px solid white;
+    background-color: #0000ff00;
+    padding: 5px 40px;
+    color: white;
+    display: inline-block;
+    margin-top: 80px;
+    margin-right: -100px;
+    cursor: pointer;
+}
+
+/* SOCIAL BADGET */
+.fa {
+  padding: 10px;
+  font-size: 35px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  float: left;
+  max-width: 100%;
+  margin-bottom: 8%;
+  border-radius: 999px;
+  margin-top: 20px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+.fa-github {
+  background: black;
+  color: white;
+}
+
+/*END STYLE SLIDE 1*/
+
+/* IMG SLIDE */
+.slide_1 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/home3.1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    z-index: 1;
+}
+.slide_2 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/imdo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+}
+.slide_3 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+    margin:auto;
+}
+.slide_4 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/img2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+}
+.slide_5 {
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/images/background-img5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:0;
+}
+div.slide ul li{
+    opacity: 0;
+}
+div.slide ul li.a{
+    opacity: 1;
+    transition: 1s;
+}
+div.slide ul li.b{
+    transition: 1s;
+    z-index: 2;
+}
+div.slide ul li.c{
+    transition: 1s;
+    z-index: 3;
+}
+div.slide ul li.d{
+    transition: 1s;
+    z-index: 4;
+}
+div.slide ul li.e{
+    transition: 1s;
+    z-index: 5;
+}
+/*AN SLIDE 2 VA 3*/
+div.wraper{
+    position: relative;
+}
+div.nut{
+    position: absolute;
+    bottom:20px;
+    z-index: 99999999;
+    left: 50%;
+    transform: translateX(-50%);
+}
+div.nut ul li{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border:2px solid white;
+    border-radius:100%;
+    z-index: 99999999;
+    transition-delay: 0.3s;
+    
+   
+}
+div.nut ul li:hover{
+    background-color: white;
+    cursor: pointer;
+    transition:0.3s;
+}    
+
+div.slide ul li.hienra{
+    opacity: 1;
+    transform: 1s;
+}
+/*XONG CHUYEN SLIDE*/
+
+div.slide ul li div.motslide .text h2,
+div.slide ul li div.motslide .text h4,
+div.slide ul li div.motslide .text hr,
+div.slide ul li div.motslide .text p,
+div.slide ul li div.motslide .text button,
+div.slide ul li div.motslide .text a {
+    opacity: 0;
+}
+div.slide ul li.hienra div.motslide .text h2,
+div.slide ul li.hienra div.motslide .text h4,
+div.slide ul li.hienra div.motslide .text hr,
+div.slide ul li.hienra div.motslide .text p,
+div.slide ul li.hienra div.motslide .text button,
+div.slide ul li.hienra div.motslide .text a {
+
+    animation: texthienra 1s forwards;
+}
+@-webkit-keyframes texthienra{
+    from{transform: translateX(-50px);opacity: 0;}
+    to{transform: translateX(0px);opacity: 1;}
+}
+div.slide ul li.hienra div.motslide .text h4{
+    animation-delay:0.3s;
+}
+div.slide ul li.hienra div.motslide .text hr{
+    animation-delay:0.5s;
+}
+div.slide ul li.hienra div.motslide .text p{
+    animation-delay:0.8s;
+}
+div.slide ul li.hienra div.motslide .text button{
+    animation-delay:1.2s;
+}
+div.slide ul li.hienra div.motslide .text a {
+    animation-delay:1s;
+}
+
+/*Xu ly xong animation*/
