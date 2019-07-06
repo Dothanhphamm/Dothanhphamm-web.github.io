@@ -1,119 +1,112 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<title>Finalhome</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta charset="UTF-8">
+	<title>IM DO</title>
 	<meta name="viewport" content="target-densitydpi=device-dpi">
 	<link rel="stylesheet" media="screen" href="bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" media="screen" href="css/home.css">
-	<script src="jquery/jquery-3.3.1.min.js"></script>
-	<script src="bootstrap/js/bootstrap.js"></script>
-	<script src="jquery/index1.js"></script>
-	<script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/signup-forms/popup/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script>
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" media="screen" href="css/imdo.css">
 	<link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+	<script src="jquery/jquery-3.3.1.min.js"></script>
+	<script src="bootstrap/js/bootstrap.js"></script>
+	<script src="jquery/home.js"></script>
 </head>
 <body>
-	<div class="wraper">
-		<div class="slide">
-			<ul>
-				<li id="id1" class="a hienra">
-					<div class="motslide">
-						<div class="slide_1"></div>
-						<div class="text">
-							<h2>HOME</h2>
-							<h4>Hello World...</h4>
-							<hr/>
-							<p>Welcome to my genuine corner.
-							<br>I yearn to blindly communicate with the human world. To hear your voice and take your hand.
-							You are able to discover my aspects by pressing the bottom dots.
-							<br>
-							Have a nice journey.
-							</p>
-
-							<!-- SOCIAL BADGET -->
-							<a href="https://www.facebook.com/Dothanhphammm" class="fa fa-facebook"></a>
-							<a href="https://twitter.com/dothanhphamm" class="fa fa-twitter"></a>
-							<a href="https://www.linkedin.com/in/dothanhphamm" class="fa fa-linkedin"></a>
-							<a href="https://www.youtube.com/channel/UCnX3s75HimOpGa5qo6sLoOw" class="fa fa-youtube"></a>
-							<a href="https://github.com/Dothanhphamm" class="fa fa-github"></a>
-							
-
-							<button id="open-popup">Subscribe</button>
-						</div>
+	
+	<!-- Part - Caroseul-->
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+	    <ol class="carousel-indicators">
+	      	<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+	      	<li data-target="#myCarousel"data-slide-to="1"></li>
+	      	<li data-target="#myCarousel" data-slide-to="2"></li>
+	      	<li data-target="#myCarousel" data-slide-to="3"></li>
+	      	<li data-target="#myCarousel" data-slide-to="4"></li>
+	    </ol>
+	    <div class="carousel-inner imdo">
+		    <div class="item bg bg1 active imdo">
+		        <div class="container">
+		        	<div class="text">
+						<button class="button-head-background"> HOME</button>
 					</div>
-				</li>
-				<li id="id2" class="b">
-					<div class="motslide">
-						<div class="slide_2"></div>
-						
-						<div class="text">
-							<h2>I'M DO</h2>
-							<h4>My bio</h4>
-							<hr/>
-							<p>My biography and curriculum vitae are avaiable here.</p>
-							<button> DOWN HERE</button>
-						</div>
+		    	</div>
+	      	</div>
+	      	<div class="item bg bg2 imdo">
+	      		<div class="container">
+		        	<div class="text">
+						<button class="button-head-background"> I'M DO</button>
 					</div>
-				</li>
-				<li id="id3" class="c">
-					<div class="motslide">
-						<div class="slide_3"></div>
-						
-						<div class="text">
-							<h2>BLOG</h2>
-							<h4>My though</h4>
-							<hr/>
-							<p>You can consider my daily expansion of thinking. My progressive mindset evovles throughout the collective stuff surrounding.
-							</p>
-							<button> EXPLORE</button>
-						</div>
+		    	</div>
+	      	</div>
+	      	<div class="item bg bg3 imdo" >
+	      		<div class="container">
+		        	<div class="text">
+						<button class="button-head-background">BLOG</button>
 					</div>
-				</li>
-				<li id="id4" class="d">
-					<div class="motslide">
-						<div class="slide_4"></div>
-						
-						<div class="text">
-							<h2>PROJECT</h2>
-							<h4>My pride </h4>
-							<hr/>
-							<p>How I grew up with my lesson from working. Up and down. 
-							</p>
-							<button> EXPLORE</button>
-						</div>
+		    	</div>
+	      	</div>
+	      	<div class="item bg bg4 imdo" >
+	      		<div class="container">
+		        	<div class="text">
+						<button class="button-head-background">PROJECT</button>
 					</div>
-				</li>
-				<li id="id5" class="e">
-					<div class="motslide">
-						<div class="slide_5"></div>
-						
-						<div class="text">
-							<h2>LEARN365</h2>
-							<h4>My future</h4>
-							<hr/>
-							<p>Here are my plan record of annual learning.
-							You both follow and imagine my next version.
-							</p>
-							<button> EXPLORE</button>
-						</div>
+		    	</div>
+	      	</div>
+	      	<div class="item bg bg5 imdo" >
+	      		<div class="container">
+		        	<div class="text">
+						<button class="button-head-background"> LEARN365</button>
 					</div>
-				</li>
-			</ul>
+		    	</div>
+	      	</div>
 		</div>
-		<div class="nut">
-			<ul>
-				<li data-tendata="id1"></li>
-				<li data-tendata="id2"></li>
-				<li data-tendata="id3"></li>
-				<li data-tendata="id4"></li>
-				<li data-tendata="id5"></li>
-			</ul>
+		<!--/carousel -->
+	    <a class="left carousel-control" href="#myCarousel" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
+	    <a class="right carousel-control" href="#myCarousel" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
+	</div>
+
+	<!-- Part - Caroseul-->
+	<div class="container">
+		<div class="row">
+			<div class="col-md-4">
+			<a href="#">
+				<img src="assets/images/ava_Do.png" alt="Phamthanhdo" style="display: block;
+				  margin-left: auto;
+				  margin-right: auto;
+				  margin-top: 1%;
+				  width: 300px; border-radius: 50%">
+			</a>
+			<h2 id="bio1"> Do Thanh Pham </h2>
+			<h4 id="bio1"> Entrepreneur Researcher</h4>
+			<p id="bio">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut enim perspiciatis est cupiditate, voluptate sunt incidunt quod maxime labore voluptatibus velit odio quasi tenetur minus. Quae quasi ipsa explicabo esse!</p>
+			<div class="button_cont" align="center"><a class="get-my-cv" href="#" target="_blank" rel="nofollow noopener">Get my CV</a></div>
 		</div>
-		<iframe style="position:absolute;bottom:0px;"src="https://zingmp3.vn/bai-hat/Nho-Ve-Ha-Noi-Hong-Nhung/ZWZA6BA8.html" width="1" height="1" frameborder="0" allowfullscreen allow=""></iframe>
+		
+		<div class="col-md-8">
+			<p class="introduction">
+				I am Do, a knowlegde enthusiastic. My current ocuppation concludes the social entrepreneur and so-called self-research.
+				<br>
+				My university is Foreign Trade Univeristy (for abbreviation, FTU). I am a somophere of the study major Business Administration.
+				<br>
+				Previously, I worked for a couple of non-profit organizations as a manager of 2 comprehensive social projects. They are corporated by a group of dynamic and accomplished students, furthermore, most of them come from FTU.
+				<br>
+				To enumerate, my proud social projects I worked for:
+				<br>
+				<ul>
+					<li><a href="http://english.ftu.edu.vn/admissions/future-international-students/information-for-counselors/item/180-enactus-ftu-hanoi.html">ENACTUS FTU CAMPUS:</a>Enactus he group of the students who are applying entrepreneurial action to run social projects with a view to transforming lives of people in need and advancing standard of living in Vietnam.
+					</li>
+					<li><a href="https://www.facebook.com/GIFTProjectVietnam/">GIFT:</a>Give Income For Thalassemia-ers - GIFT operates as a non-profit organization. GIFT objective is to generate a stable source of income for Thalassemia patients through providing services of vocational orientation, connecting to social enterprise and companion being in the working era.</li>
+					<li><a href="http://vseedvn.com">VSEED:</a> Vietnam Social Entrepreneurship Empowerment and Development - VSEED is a first project of social enterprises for students, in order to advocate the development of arrays social enterprise is quite new in Vietnam. The project aspires to contribute to the sustainable development of society by changing the concept of business as profitable as traditional business direction to balance the economic benefits, the environment and society. VSEED perpetually aims to be oriented to the students about social business models and social entrepreneurship.</li>
+					<li>XOAN: Xoan project is established to revitalize and commercialize the Tam Xoan rice speciality in Hai Hau area. We affiliated with Tam Xoan Hai Hau Association to assist farmer to  with consumption.</li>
+				</ul>
+				<br>
+				Currently, I am self-employed for my social enterprise <a href="https://www.greenjoystraw.com">Greenjoy</a>, provides the grass straw and supports for other environmental protection programs.
+				<br>
+				Due to the isolated values, I took a one-year break in university to discover my life-time aspiration.
+			</p>
+			</div>
+		</div>
 	</div>
 </body>
 </html>
